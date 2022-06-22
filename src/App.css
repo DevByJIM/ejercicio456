@@ -28,11 +28,18 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  color:#48e;
+  text-decoration: underline;
+  font-size: 2em;
+}
+
+
+.clock{
+  margin: auto 35% ;
+  padding: 1em;
+  background-color: #CCC;
+  border-color: #333;
+  box-shadow: 1px 1px 5px #666;
+  border-radius: 1em;
 }

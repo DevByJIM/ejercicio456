@@ -10,17 +10,20 @@ const ClockF = () => {
   const [fecha, setFecha] = useState(new Date());
   const [user, setUser] = useState(initialUser);
 
-  useEffect(() => {
+  useEffect((prev) => {
+
     const setHora = setInterval(() => {
       setFecha(new Date());
 
-       setUser(
-           ...user,
-          user.edad = user.edad + 1
-       )
+      setUser({
+        ...user,
+        edad: user.edad +1
+      }
+      )
     }, 1000);
+
     return () => clearInterval(setHora);
-  },[]);
+  });
 
   return (
     <>
